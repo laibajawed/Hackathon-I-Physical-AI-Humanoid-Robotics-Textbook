@@ -1,0 +1,8 @@
+{
+  "label": "Module 2: Simulation with Gazebo/Unity",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Learn simulation techniques using Gazebo and Unity for robotics"
+  }
+}

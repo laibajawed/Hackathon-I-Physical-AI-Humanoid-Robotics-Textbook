@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.specify/scripts/bash/check-prerequisites.sh --json --require-tasks --include-tasks)",
+      "SlashCommand(/sp.analyze)",
+      "Bash(.specify/scripts/bash/check-prerequisites.sh --json --require-tasks --include-tasks --feature-dir specs)",
+      "SlashCommand(/sp.specify)",
+      "Bash(git fetch --all --prune)",
+      "Bash(mv specs/plan.md specs/001-implement-robotics-book/plan.md)",
+      "Bash(git rev-parse --git-dir)",
+      "Bash(mkdir -p specs/002-rag-chatbot-backend)",
+      "SlashCommand(/sp.implement)",
+      "Bash(mkdir -p backend/src/models backend/src/services backend/src/tools backend/src/api backend/tests)",
+      "Bash(pip install -r requirements.txt)",
+      "Bash(python -m pytest tests/test_basic.py -v)",
+      "Bash(.specify/scripts/bash/setup-plan.sh --json)",
+      "Bash(.specify/scripts/bash/check-prerequisites.sh --json)",
+      "Bash(.specify/scripts/bash/check-prerequisites.sh --json --require-tasks --include-tasks --feature-dir specs/003-chatkit-frontend)",
+      "Bash(python -m uvicorn main:app --host 0.0.0.0 --port 8000 --reload)",
+      "Bash(python -c \"from main import app; print(''Server module loaded successfully'')\")",
+      "Bash(python -c \"import agents; print(dir(agents))\")",
+      "Bash(dir \"C:\\Users\\user\\AppData\\Roaming\\Python\\Python312\\site-packages\\agents\\extensions\")",
+      "Bash(dir:*)",
+      "Bash(python -c \"from main import app; print(''Backend imports successfully'')\")",
+      "WebFetch(domain:github.com)",
+      "Bash(timeout 10s python -c \"import asyncio; from main import app; print(''Backend imports and initializes correctly'')\")",
+      "Bash(npm install -g vercel)",
+      "Bash(vercel --version)",
+      "Bash(git restore vercel.json)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -1,55 +1,45 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+Version change: N/A → 1.0.0
+Modified principles:
+  - CODE QUALITY: Descriptions are now concrete.
+  - USER EXPERIENCE: Descriptions are now concrete.
+  - CONTENT ORGANIZATION: Descriptions are now concrete.
+  - DESIGN STANDARDS: Descriptions are now concrete.
+Added sections: None
+Removed sections:
+  - PRINCIPLE_5_NAME
+  - PRINCIPLE_5_DESCRIPTION
+  - PRINCIPLE_6_NAME
+  - PRINCIPLE__DESCRIPTION
+  - SECTION_2_NAME
+  - SECTION_2_CONTENT
+  - SECTION_3_NAME
+  - SECTION_3_CONTENT
+Templates requiring updates:
+  - .specify/templates/plan-template.md: ⚠ pending - Ensure "Constitution Check" section aligns with updated principles.
+  - .specify/templates/spec-template.md: ✅ updated - Implicitly aligns with general principles.
+  - .specify/templates/tasks-template.md: ✅ updated - Implicitly aligns with general principles.
+  - Command files (.claude/commands/*.md): ✅ updated - No outdated references found.
+Follow-up TODOs: None
+-->
+# Physical AI & Humanoid Robotics Learning Platform Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### CODE QUALITY
+Use Docusaurus 3.x for documentation structure; Markdown-first architecture for all content; TypeScript strict mode for all code; Component-based design with React best practices; Zero external dependencies where possible
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### USER EXPERIENCE
+Beautiful, modern design inspired by premium tech documentation; Mobile-first responsive design; Fast page loads and smooth navigation; Clear visual hierarchy for content structure; Dark/light mode built-in
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### CONTENT ORGANIZATION
+Physical AI fundamentals as foundational module; Robotics engineering topics as main curriculum; Humanoid robotics as advanced applications; Modular chapter structure for easy updates; Clear learning path from basics to advanced
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
-
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
-
-### [PRINCIPLE_6_NAME]
-
-
-[PRINCIPLE__DESCRIPTION]
-
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### DESIGN STANDARDS
+Consistent color palette (3-5 colors max); Typography: 2 font families maximum; Tailwind CSS v4 for styling; Flexbox for layout
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+This constitution establishes the foundational principles for the Physical AI & Humanoid Robotics Learning Platform. All development, design, and content creation must adhere to these principles. Amendments require documentation, approval, and a migration plan if applicable. Regular reviews will ensure ongoing compliance.
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
-
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-05 | **Last Amended**: 2025-12-05
