@@ -75,7 +75,7 @@ const config: Config = {
       tagName: 'script',
       attributes: {
         src: 'https://cdn.platform.openai.com/deployments/chatkit/chatkit.js',
-        async: true,
+        async: 'true',
       },
     },
   ],
