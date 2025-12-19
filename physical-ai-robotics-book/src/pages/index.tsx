@@ -31,22 +31,6 @@ function HomepageHeroSection() {
           Start Building →
         </Link>
       </div>
-      <div className="hero-image-section flex items-center justify-center -ml-8">
-        <img
-          src="/robotttt.jpeg"
-          alt="Advanced humanoid robot showcasing the future of robotics and AI"
-          className="max-w-full h-auto rounded-lg shadow-lg object-contain"
-          aria-describedby="image-description"
-          onError={(e) => {
-            // Fallback if image fails to load
-            const target = e.target as HTMLImageElement;
-            target.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300"><rect width="400" height="300" fill="%231A1A2E"/><text x="50%" y="50%" fill="%23A78BFA" font-family="Arial" font-size="20" text-anchor="middle">Robot Image</text></svg>';
-          }}
-        />
-        <span id="image-description" className="sr-only">
-          An advanced humanoid robot demonstrating the concepts covered in this textbook
-        </span>
-      </div>
     </section>
   );
 }
